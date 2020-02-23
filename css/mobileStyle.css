@@ -1,0 +1,981 @@
+.container {
+    background: rgba(248, 249, 253, 1);
+}
+
+.leftPart {}
+
+/* 移动端隐藏pc咨询栏 */
+.rightPart {
+    display: none;
+}
+
+/* 移动端标题 */
+.mobileTitle {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.logo_pic {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.mobileTitle {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+}
+
+/* 用户头像板块~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.userImgPart {
+    float: right;
+    height: 3rem;
+    line-height: 3rem;
+    margin-right: 1rem;
+}
+
+.user_pic {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.userInfo {
+    display: inline-block;
+    /* margin: 0.5rem; */
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+}
+
+.selcectAngle {
+    position: relative;
+    top: 0.2rem;
+    display: inline-block;
+    width: 0;
+    vertical-align: middle;
+    border: 0.4rem solid;
+    border-top-color: gray;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    cursor: pointer;
+}
+
+/* 头图板块 */
+.headerPart {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.header_pic {
+    position: relative;
+    max-width: 100%;
+    height: 8rem;
+    overflow: hidden;
+}
+
+.background_pic {
+    position: absolute;
+    left: 15%;
+    bottom: 8%;
+    width: 100%;
+    height: 58%;
+    background: url(../图片库/涂鸦@2x.png) no-repeat center/contain;
+}
+
+.updateTime {
+    position: absolute;
+    left: 22%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    transition: all 0.5s;
+    transform: translateY(-2000px);
+    z-index: 2;
+    font-size: 0.8rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.title_pic {
+    position: absolute;
+    left: 15%;
+    bottom: 0%;
+    width: 50%;
+    height: 58%;
+    background: url(../图片库/标题@2x.png) no-repeat center/contain;
+    transition: all 0.5s;
+    transform: translateX(-2000px);
+    z-index: 2;
+}
+
+.girl_pic {
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    width: 40%;
+    height: 80%;
+    background: url(../图片库/小智@2x.png) no-repeat center/contain;
+    transition: all 0.5s;
+    transform: translateX(2000px);
+    z-index: 2;
+}
+
+.build_pic {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    width: 20%;
+    height: 40%;
+    background: url(../图片库/建筑@2x.png) no-repeat center/contain;
+    transition: all 0.5s;
+    transform: translateY(-2000px);
+}
+
+.money_pic {
+    position: absolute;
+    left: 0%;
+    bottom: 8%;
+    width: 20%;
+    height: 40%;
+    background: url(../图片库/钱@2x.png) no-repeat center/contain;
+    transition: all 0.5s;
+    transform: translateY(2000px);
+}
+
+.rocketPart {
+    position: absolute;
+    right: 24%;
+    top: 6%;
+    width: 5rem;
+    height: 5rem;
+    transition: all 0.5s;
+    transform: translateX(-2000px);
+}
+
+.rocket_pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: url(../图片库/火箭@2x.png) no-repeat center/contain;
+    transition: all 0.5s;
+    transform: translateX(-2000px);
+}
+
+.smoke_pic {
+    position: absolute;
+    left: -15px;
+    top: 24px;
+    width: 100%;
+    height: 50%;
+    background: url(../图片库/火箭烟雾@2x.png) no-repeat center/contain;
+    transition: all 0.5s;
+    transform: translateX(-2000px);
+    opacity: 0;
+}
+
+.dustMan_pic {
+    position: absolute;
+    right: 1%;
+    bottom: 5%;
+    width: 15%;
+    height: 50%;
+    background: url(../图片库/沙漠人@2x.png) no-repeat center/contain;
+    transition: all 0.5s;
+    transform: translateX(2000px);
+}
+
+
+/* 视频播放板块 */
+.videoPart {
+    margin-top: 1rem;
+}
+
+.videoTitle {
+    font-size: 1rem;
+    margin: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.videoDiv {
+    position: relative;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.shareBox {
+    display: none;
+}
+
+/* 视频播放器 */
+#video {
+    height: 15rem;
+    border: 0.5rem solid #C6544C;
+    border-radius: 10px;
+}
+
+#video video {
+    width: 100%;
+    height: 100%;
+    /* object-fit: fill; */
+}
+
+#video .jsmodern-video {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.VideoBtn img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* 资讯板块 */
+.infoPart {
+    position: relative;
+    width: 90%;
+    min-height: 100%;
+    margin: 1.5rem auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(217, 210, 210, 1);
+    border-bottom: 1px solid rgba(217, 210, 210, 1);
+    background: rgba(248, 249, 253, 1);
+}
+
+/* 介绍标题 */
+.personIntro {
+    width: 80%;
+    line-height: 2.5;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(198, 84, 76, 1);
+    border-radius: 12px;
+    border: 2px solid rgba(119, 105, 105, 1);
+    color: rgba(255, 255, 255, 1);
+    z-index: 2;
+}
+
+.infoContent {
+    position: relative;
+    padding-top: 1.5rem;
+    background: rgba(248, 249, 253, 1);
+}
+
+/* 人物介绍板块 */
+.personUl {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.personLi {
+    float: left;
+}
+
+/* 人物照片 */
+.personImg {
+    width: 4rem;
+    height: 4rem;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+/* 人物姓名 */
+.personName {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 2;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    text-align: center;
+}
+
+/* 人物信息 */
+.personInfo {
+    overflow: hidden;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    line-height: 1rem;
+    letter-spacing: 1px;
+}
+
+/* 下拉圆框 */
+.circle {
+    display: inline-block;
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    background: gray;
+    border-radius: 50%;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.3rem solid;
+    border-top-color: white;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+/* 下拉圆框激活样式 */
+.circleActive {
+    display: inline-block;
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    background: #5A323C;
+    border-radius: 50%;
+}
+
+.circleActive::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.3rem solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: white;
+    border-left-color: transparent;
+}
+
+
+/* 气泡框 */
+.DialogBox {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    line-height: 1.5;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+}
+
+.DialogBox:before {
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent white transparent;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 11%;
+    display: block;
+    z-index: 2;
+}
+
+.DialogBox:after {
+    border-style: solid;
+    border-width: 0 11px 11px 11px;
+    border-color: transparent transparent gray transparent;
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 11%;
+    display: block;
+    z-index: 1;
+}
+
+/* 本期话题讨论标题 */
+.commentTitle {
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(90, 50, 60, 1);
+}
+
+.commentTitle::before {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.commentTitle::after {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+/* 讨论内容 */
+.textContent {
+    margin: 1rem;
+    font-size: 14px;
+    font-family: Helvetica;
+    color: rgba(90, 50, 60, 1);
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+/* 投票部分 */
+.votePart {
+    display: flex;
+    justify-content: center;
+}
+
+.voteItem {
+    width: 8rem;
+    margin: 0rem 1rem;
+    background: rgba(248, 249, 253, 1);
+}
+
+.voteTopPart {
+    position: relative;
+    height: 8rem;
+    border-radius: 6px;
+    border: 2px solid rgba(180, 160, 160, 1);
+}
+
+.vote_pic {
+    display: block;
+    width: 90%;
+    height: 70%;
+    margin: 0.5rem auto;
+}
+
+.whichItem {
+    position: absolute;
+    width: 5rem;
+    left: 50%;
+    bottom: -2rem;
+    transform: translateX(-50%);
+    margin: 0.5rem 0;
+    font-size: 14px;
+    font-family: Helvetica;
+    color: rgba(255, 255, 255, 1);
+    line-height: 43px;
+    letter-spacing: 3px;
+    background: rgba(198, 84, 76, 1);
+    border-radius: 40px;
+    text-align: center;
+    border-width: 0px;
+}
+
+.voteAccount {
+    margin: 2rem 0;
+    font-size: 14px;
+    font-family: Helvetica;
+    color: rgba(90, 50, 60, 1);
+    text-align: center;
+    line-height: 17px;
+    letter-spacing: 1px;
+}
+
+/* 已投票高亮 */
+.isVote {
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    transform: scale(0.7);
+    width: 3rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    background-color: rgb(100, 240, 100);
+    cursor: pointer;
+}
+
+.isVote:before {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1.5rem solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(100, 240, 100);
+    border-left-color: transparent;
+}
+
+.isVote::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 0.4rem solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(250, 79, 79);
+    border-left-color: transparent;
+}
+
+/* 往期板块 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.pastPart {
+    margin: 0;
+    padding: 0 1rem;
+    /* border-bottom: 1px solid rgba(217, 210, 210, 1); */
+}
+
+/* 操作板块 */
+.operationDiv {
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.litterIcon {
+    width: 20px;
+    vertical-align: text-bottom;
+}
+
+/* 左板块 */
+.operationLeftPart {
+    float: left;
+}
+
+.pastText {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    font-family: Helvetica;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 2px;
+}
+
+/* 查看更多 */
+.lookMore {
+    float: right;
+    font-size: 0.8rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(180, 160, 160, 1);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* 视频列表板块 */
+.videoList {
+    display: flex;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(217, 210, 210, 1);
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.videoLi {
+    position: relative;
+    width: 45%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.videoLi:nth-child(3) {
+    display: none;
+}
+
+.videoImg {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}
+
+.playIcon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 3rem;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.videoName,
+.videoTime {
+    padding: 0.1rem 0;
+    text-align: left;
+    text-indent: 0.5rem;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: 0.8rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.videoTime {
+    font-size: 0.6rem;
+}
+
+/* 留言板块 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.messagePart {
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+}
+
+.questionPart {
+    position: relative;
+    padding: 1rem;
+    padding-left: 0.5rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    border: 2px solid rgba(180, 160, 160, 1);
+}
+
+/* 对话框小图标css 绘制 */
+.iconSize {
+    zoom: 0.5;
+}
+
+.circleIcon {
+    position: relative;
+    top: 50%;
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    float: left;
+    transform: scale(0.7);
+
+}
+
+.c_eli {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.c_dialog {
+    position: absolute;
+    left: 25px;
+    display: inline-block;
+    padding: 10px;
+    width: 30px;
+    height: 15px;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 1px solid #303133;
+    position: relative;
+    top: 30px;
+}
+
+.c_dialog .dialog_ico {
+    position: relative;
+    top: -16px;
+}
+
+.dialog_ico:after,
+.dialog_ico:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 6px;
+}
+
+.dialog_ico:before {
+    border-color: black transparent transparent transparent;
+    left: 50px;
+    top: 66px;
+}
+
+.dialog_ico:after {
+    border-color: #fff transparent transparent transparent;
+    left: 50px;
+    top: 65px;
+}
+
+.questionText {
+    overflow: hidden;
+    display: block;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+}
+
+/* 导言装饰图片 */
+.decorate1 {
+    width: 0.8rem;
+    position: absolute;
+    left: 2rem;
+    bottom: -2rem;
+}
+
+.decorate2 {
+    width: 0.8rem;
+    position: absolute;
+    right: 2rem;
+    bottom: -2rem;
+}
+
+/* 评论区 */
+.commentPart {
+    margin-top: 0.8rem;
+    border-radius: 12px;
+    border: 2px solid rgba(180, 160, 160, 1);
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.tipBox {
+    position: relative;
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    border: 1px solid rgba(180, 160, 160, 1);
+}
+
+.commentIcon {
+    width: 1rem;
+    vertical-align: middle;
+}
+
+.commentTip {
+    font-size: 0.6rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(180, 160, 160, 1);
+    letter-spacing: 1px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(180, 160, 160, 1);
+    font-size: 0.6rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(180, 160, 160, 1);
+    letter-spacing: 1px;
+}
+
+.register {
+    right: 3.2rem;
+}
+
+.sign {
+    right: 0.2rem;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(198, 84, 76, 1);
+}
+
+
+h4 {
+    width: 90%;
+    margin: 0 auto;
+    font-family: MicrosoftYaHei;
+    color: rgba(180, 160, 160, 1);
+    letter-spacing: 1px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+}
+
+h4:before,
+h4:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid rgba(217, 210, 210, 1);
+    margin: auto;
+}
+
+
+/* 评论板块~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.commentList {}
+
+.commentLi {
+    position: relative;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    /* border-bottom: 1px solid rgba(217, 210, 210, 1); */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.goodIcon {
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    transform: scale(0.7);
+    width: 3rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    text-align: center;
+    color: rgba(180, 160, 160, 1);
+    background: rgba(234, 234, 234, 1);
+    cursor: pointer;
+}
+
+.goodIcon:before {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1.5rem solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgba(234, 234, 234, 1);
+    border-left-color: transparent;
+}
+
+.goodIcon::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 0.4rem solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgba(180, 160, 160, 1);
+    border-left-color: transparent;
+}
+
+
+.commentRightPart {
+    /* margin-left: 4rem; */
+    border-bottom: 1px solid rgba(217, 210, 210, 1);
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+.userPart {
+    overflow: hidden;
+}
+
+.userImg {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.userName {
+    padding-left: 1rem;
+    overflow: hidden;
+    font-size: 1rem;
+    font-family: Helvetica;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+}
+
+.commentInfo {
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(180, 160, 160, 1);
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.commentContent {
+    display: inline-block;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    line-height: 2;
+    font-size: 0.8rem;
+    overflow: hidden;
+    font-family: MicrosoftYaHei;
+    color: rgba(90, 50, 60, 1);
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}
+
+.reply {
+    text-align: right;
+}
+
+.replyIcon {
+    position: absolute;
+    right: 2.8rem;
+    bottom: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: scale(0.3)
+}
+
+.replayText {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 0.8rem;
+    color: rgba(180, 160, 160, 1);
+    letter-spacing: 1px;
+}

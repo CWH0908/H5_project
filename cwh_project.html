@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>陈伟浩作品</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 响应式样式文件 -->
+    <link rel="stylesheet" media="screen and (min-width: 769px)" href="./css/pcStyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px) " href="./css/mobileStyle.css">
+    <!--封装好的视频布局样式-->
+    <link rel="stylesheet" href="css/jsmodern.min.css">
+    <script src="js/jquery.min.js"></script>
+    <!--mp4视频插件-->
+    <script src="js/jsmodern.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 移动端标题板块 -->
+        <div class="mobileTitle">
+            <img class="logo_pic" src="./图片库/logo-要改暂用@2x.png" alt="logo">
+            <p class="mobileTitle">交易曦游记</p>
+        </div>
+
+        <!-- 用户头像板块 -->
+        <div class="userImgPart">
+            <img class="user_pic" src="./图片库/user_pic.jpg" alt="用户头像">
+            <p class="userInfo">欢迎，伟浩</p>
+            <div class="selcectAngle"></div>
+        </div>
+
+        <div class="leftPart">
+
+            <!-- 头图板块 -->
+            <header class="headerPart">
+                <div class="header_pic">
+                    <div class="background_pic"> </div>
+                    <div class="updateTime">每周三晚上20：00更新</div>
+                    <div class="title_pic"> </div>
+                    <div class="girl_pic"></div>
+                    <div class="build_pic"></div>
+                    <div class="money_pic"></div>
+                    <!-- 火箭部分 -->
+                    <div class="rocketPart">
+                        <div class="rocket_pic"></div>
+                        <div class="smoke_pic"></div>
+                    </div>
+                    <div class="dustMan_pic"></div>
+                </div>
+            </header>
+
+            <!-- 视频播放板块 -->
+            <div class="videoPart">
+                <p class="videoTitle">科比 布莱恩特——NBA传奇球星</p>
+                <div class="videoDiv">
+                    <div class="shareBox">
+                        <img class="linkIcon icon_pic" src="./图片库/分享@2x.png" alt="分享">
+                        <span class="shareText">分享</span>
+                        <img id="wechat" class="weChatIcon icon_pic" src="./图片库/微信logo.png" alt="微信">
+                        <img id="weibo" class="shareIcon icon_pic" src="./图片库/微博logo.png" alt="微博">
+                        <img id="qq" class="shareIcon icon_pic" src="./图片库/QQlogo.png" alt="QQ">
+                        <img id="qzone" class="shareIcon icon_pic" src="./图片库/QQ空间logo.png" alt="QQ空间">
+                        <div class="shareQRCode">
+                            <span class="closeShare">X</span>
+                            <span class="shareToWechat">微信扫一扫<br />查看分享~</span>
+                            <div id="qrcode" class="qrcode"></div>
+                        </div>
+                    </div>
+                    <div id="video">
+                        <video src="./图片库/king.mp4" id="videoShow"></video>
+                        <span class="VideoBtn"><img src="images/bo1.png"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 移动端资讯板块 -->
+            <div class="pcHidden infoPart">
+                <div class="personIntro">
+                    篮球巨星人物介绍
+                </div>
+                <div class="infoContent">
+                    <!-- 人物部分 -->
+                    <div class="personPart">
+                        <ul class="personUl">
+                        </ul>
+                        <div class="personInfo"></div>
+                    </div>
+                    <div class="DialogBox">
+                        本期话题讨论
+                    </div>
+
+                    <!-- 讨论部分 -->
+                    <div class="commentTitle">
+                        本期话题讨论
+                    </div>
+                    <p class="textContent">交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？</p>
+
+                    <!-- 投票部分 -->
+                    <div class="votePart">
+                        <div class="voteItem">
+                            <div class="voteTopPart">
+                                <img class="vote_pic" src="./图片库/左边@2x.png" alt="左边">
+                                <button class="whichItem">投票</button>
+                            </div>
+                            <p class="voteAccount">已投 1206 票</p>
+                        </div>
+                        <div class="voteItem">
+                            <div class="voteTopPart">
+                                <img class="vote_pic" src="./图片库/右边@2x.png" alt="右边">
+                                <button class="whichItem">投票</button>
+                            </div>
+                            <p class="voteAccount">已投 1366 票</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 往期板块 -->
+            <div class="pastPart">
+                <div class="operationDiv">
+                    <div class="operationLeftPart">
+                        <img class="litterIcon" src="./图片库/小标题装饰火箭@2x.png" alt="小标题装饰火箭">
+                        <span class="pastText">往期回顾</span>
+                        <img class="litterIcon" src="./图片库/小标题右边@2x.png" alt="小标题右边">
+                    </div>
+                    <span class="lookMore">查看更多</span>
+                </div>
+                <ul class="videoList">
+                </ul>
+            </div>
+
+            <!-- 留言板块 -->
+            <div class="messagePart">
+                <!-- 标题 -->
+                <div class="operationDiv">
+                    <div class="operationLeftPart">
+                        <img class="litterIcon" src="./图片库/小标题装饰火箭@2x.png" alt="小标题装饰火箭">
+                        <span class="pastText">留言区</span>
+                        <img class="litterIcon" src="./图片库/小标题右边@2x.png" alt="小标题右边">
+                    </div>
+                </div>
+                <!-- 问题 -->
+                <div class="questionPart">
+                    <div class="iconSize">
+                        <div class="circleIcon">
+                            <span class="c_eli">...</span>
+                            <span class="c_dialog"></span>
+                            <span class="dialog_ico"></span>
+                        </div>
+                    </div>
+                    <span
+                        class="questionText">交易简单看来，不外乎上涨下跌，赌博不外乎输赢。很多人看来，这两者都是很大风险的，但实际交易的风险就不可控了吗？交易员和赌徒之间到底差别什么？作为交易员的你，又是怎样觉得呢</span>
+                    <img class="decorate1" src="./图片库/导言装饰@2x.png" alt="导言装饰">
+                    <img class="decorate2" src="./图片库/导言装饰@2x.png" alt="导言装饰">
+                </div>
+                <!-- 评论框 -->
+                <div class="commentPart">
+                    <div class="tipBox">
+                        <img class="commentIcon" src="./图片库/comment.png" alt="">
+                        <span class="commentTip">评论需要登录，您还没有登录</span>
+                        <button class="button sign">登录</button>
+                        <button class="button register">注册</button>
+                    </div>
+                    <h4>&nbsp;&nbsp;最新评论（149）&nbsp;</h4>
+                    <ul class="commentList"> </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- pc端右侧栏 -->
+        <div class="rightPart">
+            <!-- 重叠框效果 -->
+
+            <!-- 资讯板块 -->
+            <div class="infoPart">
+                <div class="personIntro">
+                    篮球巨星人物介绍
+                </div>
+                <div class="overlapPart">
+                    <div class="infoContent">
+                        <img src="./图片库/Kobe.jpg" class="personImg" />
+                        <div class="personInfo">科比·比恩·布莱恩特（Kobe Bean
+                            Bryant），出生于美国宾夕法尼亚州费城，前美国职业篮球运动员，司职得分后卫/小前锋（锋卫摇摆人），绰号“黑曼巴”/“小飞侠”。</div>
+                        <div class="commentTitle">
+                            本期话题讨论
+                        </div>
+
+                        <p class="textContent">交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？</p>
+
+                        <!-- 投票部分 -->
+                        <div class="votePart">
+                            <div class="voteItem">
+                                <div class="voteTopPart">
+                                    <img class="vote_pic" src="./图片库/左边@2x.png" alt="左边">
+                                    <p class="chooseItem">选项一</p>
+                                    <button class="whichItem">投票</button>
+                                </div>
+                                <p class="voteAccount">已投 1206 票</p>
+                            </div>
+                            <div class="voteItem">
+                                <div class="voteTopPart">
+                                    <img class="vote_pic" src="./图片库/右边@2x.png" alt="右边">
+                                    <p class="chooseItem">选项二</p>
+                                    <button class="whichItem">投票</button>
+                                </div>
+                                <p class="voteAccount">已投 1366 票</p>
+                            </div>
+                        </div>
+
+                        <!-- 提示部分 -->
+                        <div class="tipPart">
+                            <img class="tip_pic" src="./图片库/Bitmap@2x.png" alt="">
+                        </div>
+
+                        <!-- 活动部分 -->
+                        <div class="activityPart">
+                            <div class="activityTitle">
+                                线下沙龙招募活动
+                            </div>
+                            <p class="textContent">
+                                交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？交易简单看来？
+                            </p>
+                            <div class="activeTip">
+                                活动详情
+                            </div>
+                        </div>
+
+                        <!-- 底部二维码框 -->
+                        <div class="footerPart">
+                            <p class="textContent footerTitle">加入我们《交易曦游记》大家庭吧！</p>
+                            <div class="footerBottomPart">
+                                <img src="./图片库/二维码@2x.png" class="code_pic" alt="">
+                                <div class="footerRightPart">
+                                    <p class="bottomTextContent">交易曦游记</p>
+                                    <p class="bottomTextContent">微信号：jin10_domi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/qrcode.min.js"></script>
+
+    <script src="./js/sharePage.js"></script>
+    <script src="./js//API.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
